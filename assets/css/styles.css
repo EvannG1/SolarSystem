@@ -82,13 +82,13 @@ canvas {
     flex-direction: row;
     align-items: center;
   }
-}
-.planet__image {
-  max-width: 250px;
-  border-radius: 130px;
-  animation: float 4s ease-in-out infinite;
-}
 
+  .planet__image {
+    max-width: 100%;
+    border-radius: 130px;
+    animation: float 4s ease-in-out infinite;
+  }
+}
 .planet__title {
   color: #FFF;
   text-align: center;
@@ -202,6 +202,12 @@ canvas {
 
   .planet__utils, .planet__links {
     display: none;
+  }
+
+  .planet__image {
+    max-width: 50%;
+    border-radius: 130px;
+    animation: float 4s ease-in-out infinite;
   }
 }
 
