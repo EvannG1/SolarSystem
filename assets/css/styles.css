@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #dcdedc;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cachu__container {
+  position: relative;
+  z-index: 100;
+}
+
+.cachu__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+}
+
+.subtitle {
+  color: #FFF;
+  text-align: center;
+}
+
+.hr-horizontal {
+  border: 0;
+  height: 1px;
+  width: 75%;
+  background-color: #FFF;
+}
+
+.hr-vertical {
+  border: 0;
+  height: 50vh;
+  width: 1px;
+  background-color: #FFF;
+}
+
+@media screen and (min-width: 992px) {
+  .planet__section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.planet__image {
+  max-width: 250px;
+  border-radius: 130px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.planet__title {
+  color: #FFF;
+  text-align: center;
+}
+
+.planet__description {
+  color: #FFF;
+  text-align: center;
+}
+
+.planet__icon {
+  color: yellow;
+  text-align: center;
+}
+
+.planet__nb {
+  padding-top: 15px;
+}
+.planet__nb li {
+  color: #FFF;
+  list-style: none;
+  padding-bottom: 5px;
+}
+.planet__nb li::before {
+  content: "➜";
+  display: inline;
+  color: #FFF;
+}
+
+.planet__utils {
+  color: #FFF;
+  text-align: center;
+}
+
+.planet__btn {
+  color: #FFF;
+  font-size: 16px;
+  margin: auto;
+}
+.planet__btn a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.planet__btn a:hover {
+  color: #FFF;
+}
+.planet__btn a::before, .planet__btn a::after,
+.planet__btn a span::before,
+.planet__btn a span::after {
+  content: "";
+  position: absolute;
+  background: #FFF;
+  transition: all 0.3s ease-in;
+}
+.planet__btn a::before, .planet__btn a::after {
+  height: 2px;
+  width: 0;
+}
+.planet__btn a::before {
+  bottom: 0;
+}
+.planet__btn a::after {
+  right: 0;
+}
+.planet__btn a:hover::after, .planet__btn a:hover::before {
+  width: 100%;
+}
+.planet__btn a span::before,
+.planet__btn a span::after {
+  width: 2px;
+  height: 0;
+}
+.planet__btn a span::before {
+  bottom: 0;
+}
+.planet__btn a span:hover::before,
+.planet__btn a span:hover::after {
+  height: 100%;
+}
+
+.planet__links {
+  text-align: center;
+}
+.planet__links li {
+  display: inline;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .separation {
+    display: none;
+  }
+
+  .planet__image__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .planet__icon {
+    display: none;
+  }
+
+  .planet__utils, .planet__links {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

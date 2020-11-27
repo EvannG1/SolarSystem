@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Le système solaire">
+    <meta name="keywords" content="Planètes,Soleil,Terre,Etoile,Lune,Mars">
+    <meta name="author" content="EvannG1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarSystem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/dist/cachu-slider.min.css">
+    <link rel="stylesheet" href="assets/dist/simple-grid.css">
+    <script src="assets/dist/cachu-slider.min.js"></script>
+</head>
+
+<body>
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="cachu__container">
+        <div class="cachu__sections">
+            <section class="cachu__section">
+                <div class="subsection">
+                    <h1 class="title">SolarSystem 🚀</h1>
+                    <hr class="hr-horizontal">
+                    <h3 class="subtitle">La présentation de notre système solaire en un instant !</h3>
+                </div>
+            </section>
+
+            <section class="cachu__section">
+                <div class="container">
+
+                    <div class="row planet__section">
+                        <div class=" col-4 col-12-sm planet__image__container">
+                            <img class="planet__image" src="planets/Soleil.png" alt="Soleil">
+                        </div>
+
+                        <div class="separation col-2 col-4-sm">
+                            <hr class="hr-vertical">
+                        </div>
+
+                        <div class="col-6 col-12-sm" style="width: 100%;">
+                            <h2 class="planet__title">Le Soleil</h2>
+                            <h2 class="planet__icon"><i class="fas fa-star"></i></h2>
+                            <p class="planet__description">
+                                Le Soleil est l’étoile se trouvant au centre du système solaire. Aujourd’hui, on compte huit planètes qui gravitent autour de lui.
+                            </p>
+                            <ul class="planet__nb">
+                                <li> Le Soleil est l'étoile centrale du système solaire.</li>
+                                <li> À la surface du Soleil la température est de 5 500° Celsius, mais elle atteint les 15 millions de degré Celsius en son centre.</li>
+                            </ul>
+                            <h2 class="planet__utils">Liens utiles</h2>
+                            <ul class="planet__links">
+                                <li>
+                                    <span class="planet__btn"><a href="https://fr.wikipedia.org/wiki/Soleil" target="_blank"><span>&nbsp; Wikipédia &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                                <li>
+                                    <span class="planet__btn"><a href="https://www.futura-sciences.com/sciences/definitions/univers-soleil-3727/" target="_blank"><span>&nbsp; Futura Sciences &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                                <li>
+                                    <span class="planet__btn"><a href="https://www.le-systeme-solaire.net/soleil.html" target="_blank"><span>&nbsp; Le Système Solaire &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="cachu__section">
+                <div class="container">
+
+                    <div class="row planet__section">
+                        <div class=" col-4 col-12-sm planet__image__container">
+                            <img class="planet__image" src="planets/Mercure.png" alt="Mercure">
+                        </div>
+
+                        <div class="separation col-2 col-4-sm">
+                            <hr class="hr-vertical">
+                        </div>
+
+                        <div class="col-6 col-12-sm" style="width: 100%;">
+                            <h2 class="planet__title">Mercure</h2>
+                            <h2 class="planet__icon">🌌</h2>
+                            <p class="planet__description">
+                                Mercure est la plus petite planète du système solaire ainsi que celle la plus proche du Soleil.
+                            </p>
+                            <ul class="planet__nb">
+                                <li> Mercure possède la période de révolution la plus rapide du système solaire (88 jours).</li>
+                                <li> Son nom provient du dieu romain Mercure, en raison de sa vitesse de résolution.</li>
+                            </ul>
+                            <h2 class="planet__utils">Liens utiles</h2>
+                            <ul class="planet__links">
+                                <li>
+                                    <span class="planet__btn"><a href="https://fr.wikipedia.org/wiki/Mercure_(plan%C3%A8te)" target="_blank"><span>&nbsp; Wikipédia &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                                <li>
+                                    <span class="planet__btn"><a href="https://www.futura-sciences.com/sciences/definitions/astronomie-mercure-3722/" target="_blank"><span>&nbsp; Futura Sciences &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                                <li>
+                                    <span class="planet__btn"><a href="https://www.le-systeme-solaire.net/mercure.html" target="_blank"><span>&nbsp; Le Système Solaire &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="cachu__section">
+                <div class="container">
+
+                    <div class="row planet__section">
+                        <div class=" col-4 col-12-sm planet__image__container">
+                            <img class="planet__image" src="planets/Venus.png" alt="Mercure">
+                        </div>
+
+                        <div class="separation col-2 col-4-sm">
+                            <hr class="hr-vertical">
+                        </div>
+
+                        <div class="col-6 col-12-sm" style="width: 100%;">
+                            <h2 class="planet__title">Vénus</h2>
+                            <h2 class="planet__icon">🌌</h2>
+                            <p class="planet__description">
+                                Plus connue sous le nom d’étoile du Berger, Vénus est la seconde planète la plus proche du Soleil, et la sixième plus grosse.
+                            </p>
+                            <ul class="planet__nb">
+                                <li> C’est la planète la plus chaude du système solaire.</li>
+                                <li> On appelle aussi Vénus l’« <em>étoile du berger</em> », de même que l'« <em>étoile du soir</em> » ou l'« <em>étoile du matin</em> » car elle fait partie des premières étoiles que l'on voit le soir et des dernières le matin.</li>
+                            </ul>
+                            <h2 class="planet__utils">Liens utiles</h2>
+                            <ul class="planet__links">
+                                <li>
+                                    <span class="planet__btn"><a href="https://fr.wikipedia.org/wiki/V%C3%A9nus_(plan%C3%A8te)" target="_blank"><span>&nbsp; Wikipédia &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                                <li>
+                                    <span class="planet__btn"><a href="https://www.futura-sciences.com/sciences/definitions/astronomie-venus-421/" target="_blank"><span>&nbsp; Futura Sciences &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                                <li>
+                                    <span class="planet__btn"><a href="https://www.le-systeme-solaire.net/venus.html" target="_blank"><span>&nbsp; Le Système Solaire &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="cachu__section">
+                <div class="container">
+
+                    <div class="row planet__section">
+                        <div class=" col-4 col-12-sm planet__image__container">
+                            <img class="planet__image" src="planets/Terre.png" alt="La Terre">
+                        </div>
+
+                        <div class="separation col-2 col-4-sm">
+                            <hr class="hr-vertical">
+                        </div>
+
+                        <div class="col-6 col-12-sm" style="width: 100%;">
+                            <h2 class="planet__title">La Terre</h2>
+                            <h2 class="planet__icon">👨🐶👩</h2>
+                            <p class="planet__description">
+                                Aussi appelée “planète bleue” en raison de l’étendue des océans et mers, la Terre est la troisième planète du système solaire, et la cinquième plus grosse.
+                            </p>
+                            <ul class="planet__nb">
+                                <li> Elle est la seule planète connue sur laquelle se trouvent des êtres vivants.</li>
+                                <li> La Terre accomplit une rotation sur elle-même en 23 heures et 56 minutes et 4,2 secondes (et non 24 heures), ce qui définit la durée d’un jour sidéral.</li>
+                            </ul>
+                            <h2 class="planet__utils">Liens utiles</h2>
+                            <ul class="planet__links">
+                                <li>
+                                    <span class="planet__btn"><a href="https://fr.wikipedia.org/wiki/Terre" target="_blank"><span>&nbsp; Wikipédia &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                                <li>
+                                    <span class="planet__btn"><a href="https://www.futura-sciences.com/planete/definitions/structure-terre-terre-4725/" target="_blank"><span>&nbsp; Futura Sciences &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                                <li>
+                                    <span class="planet__btn"><a href="https://www.le-systeme-solaire.net/terre.html" target="_blank"><span>&nbsp; Le Système Solaire &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="cachu__section">
+                <div class="container">
+
+                    <div class="row planet__section">
+                        <div class=" col-4 col-12-sm planet__image__container">
+                            <img class="planet__image" src="planets/Lune.png" alt="La Lune">
+                        </div>
+
+                        <div class="separation col-2 col-4-sm">
+                            <hr class="hr-vertical">
+                        </div>
+
+                        <div class="col-6 col-12-sm" style="width: 100%;">
+                            <h2 class="planet__title">La Lune</h2>
+                            <h2 class="planet__icon">👨‍🚀🚀👩‍🚀</h2>
+                            <p class="planet__description">
+                                La Lune est l’unique satellite naturel de la planète Terre, c’est-à-dire qu’elle gravite autour d’elle. Elle fait partie des objets de l’univers explorés par l’Homme.
+                            </p>
+                            <ul class="planet__nb">
+                                <li> Le véritable nom de la Lune est « <em>Terre I</em> ».</li>
+                                <li> La Lune s'éloigne de la Terre à une vitesse moyenne de 3,8 cm par an.</li>
+                            </ul>
+                            <h2 class="planet__utils">Liens utiles</h2>
+                            <ul class="planet__links">
+                                <li>
+                                    <span class="planet__btn"><a href="https://fr.wikipedia.org/wiki/Lune" target="_blank"><span>&nbsp; Wikipédia &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                                <li>
+                                    <span class="planet__btn"><a href="https://www.futura-sciences.com/sciences/definitions/univers-lune-2550/" target="_blank"><span>&nbsp; Futura Sciences &nbsp;<i class="fas fa-external-link-alt" style="font-size: 14px;"></i> &nbsp;</span></a></span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/background.js"></script>
+</body>
+
+</html>

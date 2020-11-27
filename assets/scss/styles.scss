@@ -1,0 +1,219 @@
+$primaryColor : #FFF;
+
+@mixin alignment($color, $align) {
+    color: $color;
+    text-align: $align;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #dcdedc;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.cachu__container {
+    position: relative;
+    z-index: 100;
+}
+
+.cachu__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title {
+    @include alignment($primaryColor, center);
+
+}
+
+.subtitle {
+    @include alignment($primaryColor, center);
+}
+
+.hr-horizontal {
+    border: 0;
+    height: 1px;
+    width: 75%;
+    background-color: $primaryColor;
+}
+
+.hr-vertical {
+    border: 0;
+    height: 50vh;
+    width: 1px;
+    background-color: $primaryColor;
+}
+
+@media screen and(min-width: 992px) {
+    .planet__section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.planet__image {
+    max-width: 250px;
+    border-radius: 130px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.planet__title {
+    @include alignment($primaryColor, center);
+}
+
+.planet__description {
+    @include alignment($primaryColor, center);
+}
+
+.planet__icon {
+    @include alignment(yellow, center);
+}
+
+.planet__nb {
+    padding-top: 15px;
+    li {
+        color: $primaryColor;
+        list-style: none;
+        padding-bottom: 5px;
+        &::before {
+            content: '\279C';
+            display: inline;
+            color: $primaryColor;
+        }
+    }
+}
+
+.planet__utils {
+    @include alignment($primaryColor, center);
+}
+
+.planet__btn {
+    color: $primaryColor;
+    font-size: 16px;
+    margin: auto;
+    a {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        &:hover {
+            color: $primaryColor;
+        }
+        &::before,
+        &::after,
+        span::before,
+        span::after {
+            content: '';
+            position: absolute;
+            background: $primaryColor;
+            transition: all 0.3s ease-in
+        }
+
+        &::before,
+        &::after {
+            height: 2px;
+            width: 0;
+        }
+
+        &::before {
+            bottom: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+
+        &:hover::after,
+		&:hover::before {
+            width: 100%
+        }
+
+        span::before,
+        span::after {
+            width: 2px;
+            height: 0;
+        }
+
+        span::before {
+            bottom: 0;
+        }
+
+        span:hover::before,
+        span:hover::after {
+            height: 100%;
+        }
+    }
+}
+
+.planet__links {
+    text-align: center;
+    li {
+        display: inline;
+        padding-left: 10px;
+    }
+}
+
+@media screen and(max-width: 992px) {
+    .title {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .separation {
+        display: none;
+    }
+
+    .planet__image__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .planet__icon {
+        display: none;
+    }
+
+    .planet__utils, .planet__links {
+        display: none;
+    }
+}
